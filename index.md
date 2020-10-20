@@ -73,8 +73,9 @@ namedWindow("janela",WINDOW_AUTOSIZE);
 
 ```
 
+Negativo da imagem
 
-
+![Imagem  Negativo](https://i.imgur.com/BUsF7S0.jpg)
 
 
 
