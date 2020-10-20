@@ -9,7 +9,7 @@ Código
 _regions.cpp_
 
 
-`
+```
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
@@ -67,5 +67,5 @@ namedWindow("janela",WINDOW_AUTOSIZE);
   return 0;
 }
 
-` 
+```
 
