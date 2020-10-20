@@ -5,6 +5,7 @@
 **Esse programa solicita ao usuário as coordenadas de dois pontos P1 e P2 localizados dentro dos limites do tamanho de uma imagem e exibe que lhe for fornecida. A região definida pelo retângulo de vértices opostos definidos pelos pontos P1 e P2 será exibida com o negativo da imagem na região correspondente.**
 
 Imagem original 
+
 ![Imagem Original](https://i.imgur.com/nN2xezH.jpg)
 
 ### Código
@@ -72,11 +73,13 @@ namedWindow("janela",WINDOW_AUTOSIZE);
 ```
 
 
-Exemplo de utilização do programa:
+Exemplo de utilização do programa
+
 ![Imagem  Negativo](https://i.imgur.com/gAZrRad.jpg)
 
 
 Negativo da imagem
+
 ![Imagem  Negativo](https://i.imgur.com/BUsF7S0.jpg)
 
 
