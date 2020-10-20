@@ -71,7 +71,19 @@ namedWindow("janela",WINDOW_AUTOSIZE);
 }
 
 ```
+O código inicialmente inclui as bibliotecas necessárias. Depois define os tipos a serem utilizados que são image e int (inteiros). Faz o teste para verificar se a imagem foi carregada correntamente e é utilizada a imagem em grayscale. A quantidade pixels passa a ser conhecida e portanto, a quantidade de linhas e colunas (rows, cols). É solicitado ao usuário os pontos e feito um teste para verificar se os pontos estão dentro dos limites da imagem, caso não, é solicitado novamente.
 
+Calcula-se o negativo dos pixels da região delimitada pelos pontos fornecido pelo usuário no seguinte trecho:
+
+````
+  for(int i=x1; i<x2; i++){
+    for(int j=y1; j<y2; j++){
+     image.at<uchar>(i,j)=255-image.at<uchar>(i,j);
+   }
+ }
+ 
+````
+Por fim, é exibida o negativo da imagem no trecho solicitado.
 
 Exemplo de utilização do programa
 
