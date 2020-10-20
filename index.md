@@ -52,11 +52,11 @@ namedWindow("janela",WINDOW_AUTOSIZE);
  cin>> x2;
  cout<< " "<<endl;
  cin>> y2;
-  }while(x2<0 || x2>rows || y2<0 || y2>cols);
+ }while(x2<0 || x2>rows || y2<0 || y2>cols);
 
 
-  for(int i=x1;i<x2;i++){
-    for(int j=y1;j<y2;j++){
+  for(int i=x1; i<x2; i++){
+    for(int j=y1; j<y2; j++){
      image.at<uchar>(i,j)=255-image.at<uchar>(i,j);
    }
  }
