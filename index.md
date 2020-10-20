@@ -71,10 +71,9 @@ namedWindow("janela",WINDOW_AUTOSIZE);
 }
 
 ```
-O código inicialmente inclui as bibliotecas necessárias. Depois define os tipos a serem utilizados que são image e int (inteiros). Faz o teste para verificar se a imagem foi carregada correntamente e é utilizada a imagem em grayscale. A quantidade pixels passa a ser conhecida e portanto, a quantidade de linhas e colunas (rows, cols). É solicitado ao usuário os pontos e feito um teste para verificar se os pontos estão dentro dos limites da imagem, caso não, é solicitado novamente.
+O código inicialmente inclui as bibliotecas necessárias. Depois define os tipos a serem utilizados que são image e int (inteiros). Faz o teste para verificar se a imagem foi carregada correntamente (é utilizada a imagem em grayscale). A quantidade pixels passa a ser conhecida e portanto, a quantidade de linhas e colunas (rows, cols). É solicitado ao usuário os pontos e feito um teste para verificar se os pontos estão dentro dos limites da imagem, caso não, é solicitado novamente.
 
-Calcula-se o negativo dos pixels da região delimitada pelos pontos fornecido pelo usuário no seguinte trecho:
-
+Calcula-se o negativo dos pixels da região delimitada pelos pontos fornecidos subtraindo de 255 o valor do tom de cinza associado a esse pixel. Isso é feito no seguinte trecho do código acima:
 ````
   for(int i=x1; i<x2; i++){
     for(int j=y1; j<y2; j++){
