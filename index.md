@@ -4,6 +4,7 @@
 ## **1.Regions**
 **Esse programa solicita ao usuário as coordenadas de dois pontos P1 e P2 localizados dentro dos limites do tamanho de uma imagem e exibe que lhe for fornecida. Entretanto, a região definida pelo retângulo de vértices opostos definidos pelos pontos P1 e P2 será exibida com o negativo da imagem na região correspondente.**
 
+
 ### Código
 
 _regions.cpp_
@@ -37,21 +38,21 @@ namedWindow("janela",WINDOW_AUTOSIZE);
  cout << "coordenada y da imagem vai de:  " << "0-" << cols-1 << endl;
 
 
- do{
- cout << "Digite a coordenada (x,y) do ponto P1: ";
- cout<< " "<<endl;
- cin >> x1;
- cout<< " "<<endl;
- cin >> y1;
+ do{ 
+    cout << "Digite a coordenada (x,y) do ponto P1: ";
+    cout<< " "<<endl;
+    cin >> x1;
+    cout<< " "<<endl;
+    cin >> y1;  
  }while(x1<0 || x1>rows || y1<0 || y1>cols);
 
 
  do{
- cout << "Digite a coordenada (x,y) do ponto P2: ";
- cout<< " "<<endl;
- cin>> x2;
- cout<< " "<<endl;
- cin>> y2;
+    cout << "Digite a coordenada (x,y) do ponto P2: ";
+    cout<< " "<<endl;
+    cin>> x2;
+    cout<< " "<<endl;
+    cin>> y2;
  }while(x2<0 || x2>rows || y2<0 || y2>cols);
 
 
@@ -68,4 +69,8 @@ namedWindow("janela",WINDOW_AUTOSIZE);
 }
 
 ```
+
+
+
+
 
