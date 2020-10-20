@@ -1,16 +1,14 @@
 # **Processamento Digital de Imagens Usando Biblioteca OpenCV** 
 
-
 ## **1.Negativo de uma Imagem**
-**Especificados dois pontos pelo usuário, este programa calcula o negativo da imagem na região retangular que tem esses pontos como vértices de uma de suas diagonais.**
+
+**Esse programa solicita ao usuário as coordenadas de dois pontos P1 e P2 localizados dentro dos limites do tamanho de uma imagem e exibe que lhe for fornecida. A região definida pelo retângulo de vértices opostos definidos pelos pontos P1 e P2 será exibida com o negativo da imagem na região correspondente.**
 
 Imagem original 
 
 ![Imagem Original](https://i.imgur.com/nN2xezH.jpg)
 
 ### Código
-Esse programa solicita ao usuário as coordenadas de dois pontos P1 e P2 localizados dentro dos limites do tamanho de uma imagem e exibe que lhe for fornecida. A região definida pelo retângulo de vértices opostos definidos pelos pontos P1 e P2 será exibida com o negativo da imagem na região correspondente.
-
 _regions.cpp_
 
 
