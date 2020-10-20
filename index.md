@@ -6,7 +6,7 @@
 
 ### Código
 
-{c:brown}regions.cpp{/c}
+_regions.cpp_
 
 
 ```
