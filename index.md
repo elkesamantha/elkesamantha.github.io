@@ -69,11 +69,3 @@ namedWindow("janela",WINDOW_AUTOSIZE);
 
 ` 
 
-
-
-
-
-
-
-
-`
