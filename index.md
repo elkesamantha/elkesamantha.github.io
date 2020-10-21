@@ -93,5 +93,54 @@ Negativo da imagem
 
 ![Imagem  Negativo](https://i.imgur.com/BUsF7S0.jpg)
 
+## **2.Troca Regiões**
+
+**Esse programa permuta o segundo com o quarto e o primeiro com o terceiro quadrantes de uma imagem.**
+
+### Código
+_trocaregioes.cpp_
+````
+#include <iostream>
+#include <opencv2/opencv.hpp>
+ 
+using namespace cv;
+using namespace std;
+ 
+int main(int, char**){
+
+Mat image, auxiliar;
+int x, y;
+
+ image = imread("biel.png",CV_LOAD_IMAGE_GRAYSCALE);
+  if(!image.data)
+    cout << "erro" << endl;
+
+  namedWindow("janela",WINDOW_AUTOSIZE);
+
+  x = image.rows;
+  y = image.cols;
+
+  image(Rect(0,0,y/2,x/2)).copyTo(auxiliar);                             
+  
+  image(Rect(x/2,y/2,y/2,x/2)).copyTo(image(Rect(0,0,y/2,x/2)));     
+  
+  auxiliar.copyTo(image(Rect(x/2,y/2,y/2,x/2)));                          
+  
+  image(Rect(0,y/2,y/2,x/2)).copyTo(auxiliar);                            
+  
+  image(Rect(x/2,0,y/2,x/2)).copyTo(image(Rect(0,y/2,y/2,x/2)));     
+  
+  auxiliar.copyTo(image(Rect(x/2,0,y/2,x/2)));      
+  
+
+  imshow("janela", image);
+  waitKey();
+
+  return 0;
+
+}
+
+````
+
 
 
