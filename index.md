@@ -146,7 +146,11 @@ int x, y;
 
 Entrada do programa _trocaregioes.cpp_
 
-![Entrada do Programa](https://i.imgur.com/zTr3EXq.jpg)
+![Entrada do Programa](https://i.imgur.com/7t6rRYq.jpg)
+
+Saída do programa _trocaregioes.cpp_
+
+![Entrada do Programa](https://i.imgur.com/0ioEm6X.jpg)
 
 
 
