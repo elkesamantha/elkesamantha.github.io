@@ -145,6 +145,7 @@ int x, y;
 ![](https://i.imgur.com/UkMsWAr.jpg)
 
 Entrada do programa _trocaregioes.cpp_
+
 ![Entrada do Programa](https://i.imgur.com/zTr3EXq.jpg)
 
 
