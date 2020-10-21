@@ -89,7 +89,7 @@ Exemplo de utilização do programa
 ![Imagem  Negativo](https://i.imgur.com/gAZrRad.jpg)
 
 
-Negativo da imagem
+Saída do programa _regions.cpp_
 
 ![Imagem  Negativo](https://i.imgur.com/BUsF7S0.jpg)
 
