@@ -330,7 +330,7 @@ Entrada do programa _labeling.cpp_
 
 Passos:
 
-###1.Remoção das bolhas das bordas
+### 1.Remoção das bolhas das bordas
 
 #### 1.1.Remoção das bolhas da borda superior
 
