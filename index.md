@@ -322,11 +322,14 @@ _labeling.cpp_
 }
 
 ````
+Utilzação do programa:
 
+![](https://i.imgur.com/k6P6X3K.jpg)
 
 Entrada do programa _labeling.cpp_
 
 ![Entrada do Programa](https://i.imgur.com/NS7jxHF.png)
+
 
 Passos:
 
@@ -347,6 +350,8 @@ Passos:
 1.4.Remoção das bolhas da lateral esquerda
 
 ![1.4](https://i.imgur.com/SB7guki.png)
+
+
 
 
 
