@@ -157,6 +157,9 @@ Saída do programa _trocaregioes.cpp_
 
 **Esse programa identificar bolhas com ou sem buracos internos que existam na cena e conta bolhas que não tocam as bordas da imagem.**
 
+### Código
+_labeling.cpp_
+
 ````
 #include <iostream>
 #include <opencv2/opencv.hpp>
@@ -304,6 +307,9 @@ Saída do programa _trocaregioes.cpp_
 ````
 
 
+Entrada do programa _labeling.cpp_
+
+![Entrada do Programa](https://i.imgur.com/NS7jxHF.png)
 
 
 
