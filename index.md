@@ -194,6 +194,7 @@ _labeling.cpp_
  //**************** REMOVER BOLHAS DAS BORDAS ***************************
 
    //Remover bolhas da borda superior
+   
   for(int j=0; j<width; j++){
     if(image.at<Vec3b>(0,j) == branco){
        p.x=j;
@@ -206,6 +207,7 @@ _labeling.cpp_
   //*********************************************************************
 
   //Remover bolhas da borda lateral direita
+  
    for(int i=0; i<height; i++){
     if(image.at<Vec3b>(i,width-1) == branco){
        p.x=width-1;
@@ -227,6 +229,7 @@ _labeling.cpp_
 
  //*********************************************************************
    //Remover bolhas da borda lateral esquerda
+   
    for(int i=0; i<height; i++){
     if(image.at<Vec3b>(i,0) == branco){
        p.x=0;
@@ -239,6 +242,7 @@ _labeling.cpp_
  //*********************************************************************
 
    //Troca a cor do fundo
+   
    p.x=0; p.y=0;
    floodFill(image,p,Scalar(100,100,100));
    imwrite("2.png", image);
@@ -263,6 +267,7 @@ _labeling.cpp_
  //*********************************************************************
  
     //Troca a cor do fundo 
+    
    p.x=0; p.y=0;
    floodFill(image,p,Scalar(0,0,0));
    imwrite("4.png", image);
