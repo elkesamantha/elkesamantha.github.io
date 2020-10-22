@@ -153,5 +153,157 @@ Saída do programa _trocaregioes.cpp_
 ![Entrada do Programa](https://i.imgur.com/0ioEm6X.jpg)
 
 
+## **3.Identificando e contando bolhas**
+
+**Esse programa identificar bolhas com ou sem buracos internos que existam na cena e conta bolhas que não tocam as bordas da imagem.**
+
+````
+#include <iostream>
+#include <opencv2/opencv.hpp>
+  
+  using namespace cv;
+  using namespace std;
+  
+  int main(int argc, char** argv){
+
+   Mat image;
+   int width, height;
+   Vec3b branco(255,255,255);
+   Vec3b preto(0,0,0);
+   Vec3b cor_bolha_buraco(204,50,153); //cor
+   CvPoint p;
+   unsigned long int objetos=0;
+   unsigned long int bolhas_buracos=0;
+   unsigned long int bolhas=0;
+   Vec3b label;
+ 
+   image = imread("bolhas.png",CV_LOAD_IMAGE_COLOR);
+ 
+   if(!image.data){
+     cout << "erro ao carregar imagem\n";
+     return(-1);
+  }
+
+   width=image.size().width;
+   height=image.size().height;
+
+
+ //**************** REMOVER BOLHAS DAS BORDAS ***************************
+
+   //Remover bolhas da borda superior
+  for(int j=0; j<width; j++){
+    if(image.at<Vec3b>(0,j) == branco){
+       p.x=j;
+       p.y=0;
+       floodFill(image,p,Scalar(0,0,0));
+       }
+     }
+  imwrite("1_1.png", image);
+
+  //*********************************************************************
+
+  //Remover bolhas da borda lateral direita
+   for(int i=0; i<height; i++){
+    if(image.at<Vec3b>(i,width-1) == branco){
+       p.x=width-1;
+       p.y=i;
+       floodFill(image,p,Scalar(0,0,0));
+     }
+   }
+   imwrite("1_2.png", image);
+ 
+   //Remover bolhas da borda inferior
+  for(int j=0; j<width; j++){
+     if(image.at<Vec3b>(height-1,j) == branco){
+       p.x=j;
+       p.y=height-1;
+       floodFill(image,p,Scalar(0,0,0));
+    }
+   }
+  imwrite("1_3.png", image);
+
+ //*********************************************************************
+   //Remover bolhas da borda lateral esquerda
+   for(int i=0; i<height; i++){
+    if(image.at<Vec3b>(i,0) == branco){
+       p.x=0;
+       p.y=i;
+       floodFill(image,p,Scalar(0,0,0));
+     }
+   }
+   imwrite("1_4.png", image);
+  
+ //*********************************************************************
+
+   //Troca a cor do fundo
+   p.x=0; p.y=0;
+   floodFill(image,p,Scalar(100,100,100));
+   imwrite("2.png", image);
+ 
+ //********************** ACHA BOLHAS COM BURACOS **********************
+
+  
+   for(int i=0;i<height;i++){
+     for(int j=0;j<width;j++){
+     if(image.at<Vec3b>(i,j) == preto){
+         if(image.at<Vec3b>(i,j-1) == cor_bolha_buraco){}
+        else if(image.at<Vec3b>(i,j-1) == branco){
+           p.x = j-1;
+           p.y = i;
+           floodFill(image,p,Scalar(204,50,153));
+         }
+      }
+     }
+   }
+   imwrite("3.png", image);
+   
+ //*********************************************************************
+ 
+    //Troca a cor do fundo 
+   p.x=0; p.y=0;
+   floodFill(image,p,Scalar(0,0,0));
+   imwrite("4.png", image);
+
+ //**************************** LABELING *******************************
+ 
+   
+   for(int i=0;i<height;i++){
+     for(int j=0;j<width;j++){
+        if(image.at<Vec3b>(i,j) == branco){
+          p.x=j; p.y=i;
+          objetos++;
+          bolhas++;
+          label[0] = objetos & 0x0000FF;
+          label[1] = (objetos & 0x00FF00) >> 8;
+          label[2] = (objetos & 0xFF0000) >> 16;
+          floodFill(image,p,Scalar(label[0],label[1],label[2]));
+        }
+        else if(image.at<Vec3b>(i,j-1) == cor_bolha_buraco){
+          p.x=j; p.y=i;
+          objetos++;
+          bolhas_buracos++;
+          label[0] = (objetos & 0x0000FF);
+          label[1] = (objetos & 0x00FF00) >> 8;
+          label[2] = (objetos & 0xFF0000) >> 16;
+          floodFill(image,p,Scalar(label[0],label[1],label[2]));
+       }
+     }
+  }
+
+  //********************************************************************
+
+  cout << "Bolhas sem buracos: " << bolhas << endl;
+  cout << "Bolhas com buracos: " << bolhas_buracos << endl;
+  cout << "Total de bolhas: "    << objetos << endl;
+
+ imwrite("labeling.png", image);
+  waitKey();
+ return 0;
+}
+
+````
+
+
+
 
 
