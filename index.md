@@ -332,19 +332,19 @@ Passos:
 
 ###1.Remoção das bolhas das bordas
 
-####1.1.Remoção das bolhas da borda superior
+#### 1.1.Remoção das bolhas da borda superior
 
 ![1.1](https://i.imgur.com/wB64lB1.png)
 
-####1.2.Remoção das bolhas da borda lateral direita
+#### 1.2.Remoção das bolhas da borda lateral direita
 
 ![1.2](https://i.imgur.com/nWIXQ4H.png)
 
-####1.3.Remoção das bolhas da borda inferior
+#### 1.3.Remoção das bolhas da borda inferior
 
 ![1.3](https://i.imgur.com/lCurncU.png)
 
-####1.4.Remoção das bolhas da lateral esquerda
+#### 1.4.Remoção das bolhas da lateral esquerda
 
 ![1.4](https://i.imgur.com/SB7guki.png)
 
