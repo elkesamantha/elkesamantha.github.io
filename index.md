@@ -121,15 +121,10 @@ int x, y;
   y = image.cols;
 
   image(Rect(0,0,y/2,x/2)).copyTo(auxiliar);                             
-  
   image(Rect(x/2,y/2,y/2,x/2)).copyTo(image(Rect(0,0,y/2,x/2)));     
-  
   auxiliar.copyTo(image(Rect(x/2,y/2,y/2,x/2)));                          
-  
   image(Rect(0,y/2,y/2,x/2)).copyTo(auxiliar);                            
-  
   image(Rect(x/2,0,y/2,x/2)).copyTo(image(Rect(0,y/2,y/2,x/2)));     
-  
   auxiliar.copyTo(image(Rect(x/2,0,y/2,x/2)));      
   
 
@@ -141,6 +136,21 @@ int x, y;
 }
 
 ````
+A troca de regiões ocorre nas seguintes linhas de código:
+
+````
+  image(Rect(0,0,y/2,x/2)).copyTo(auxiliar);                             
+  image(Rect(x/2,y/2,y/2,x/2)).copyTo(image(Rect(0,0,y/2,x/2)));     
+  auxiliar.copyTo(image(Rect(x/2,y/2,y/2,x/2)));                          
+  image(Rect(0,y/2,y/2,x/2)).copyTo(auxiliar);                            
+  image(Rect(x/2,0,y/2,x/2)).copyTo(image(Rect(0,y/2,y/2,x/2)));     
+  auxiliar.copyTo(image(Rect(x/2,0,y/2,x/2)));    
+  
+````
+De acordo com os seguintes passos:
+
+Copia segundo quadrante para imagem auxiliar; Copia quarto quadrante para o segundo quadrante; Copia imagem auxiliar para o quarto quadrante; Copia primeiro quadrante para a imagem auxiliar; Copia terceiro quadrante para o primeiro quadrante; Copia imagem auxiliar para o terceiro quadrante.
+
 
 ![](https://i.imgur.com/UkMsWAr.jpg)
 
@@ -155,7 +165,7 @@ Saída do programa _trocaregioes.cpp_
 
 ## **3.Identificando e contando bolhas**
 
-**Esse programa identificar bolhas com ou sem buracos internos que existam na cena e conta bolhas que não tocam as bordas da imagem.**
+**Esse programa identifica bolhas com ou sem buracos internos que existam na cena e conta bolhas que não tocam as bordas da imagem.**
 
 ### Código
 
