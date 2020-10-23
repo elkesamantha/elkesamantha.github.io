@@ -413,8 +413,8 @@ int main(int argc, char** argv){
     imshow("Original", frame_in );
     imshow("Equalizado", frame_out );
 
-    char c = (char)waitKey(33);
-    if( c == 27 ) break;
+    char e = (char)waitKey(33);
+    if(e == 32) break;         //space
     
   }
 
