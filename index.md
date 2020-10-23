@@ -322,9 +322,6 @@ _labeling.cpp_
 }
 
 ````
-**Utilzação do programa:**
-
-![](https://i.imgur.com/k6P6X3K.jpg)
 
 **Entrada do programa _labeling.cpp_**
 
@@ -367,7 +364,9 @@ Passos:
  
  ![5](https://i.imgur.com/4cc9Vl3.png)
  
+**Utilzação do programa (contagem das bolhas)**
 
+![](https://i.imgur.com/k6P6X3K.jpg)
 
 
 
