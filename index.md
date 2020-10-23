@@ -428,7 +428,7 @@ int main(int argc, char** argv){
  
  **Vídeo mostrando a aplicação do programa:**
  
-[! [] (http://img.youtube.com/vi/CophjRFXGWI/0.jpg)] (http://www.youtube.com/watch?v=CophjRFXGWI "Equalizador de Histograma")
+[! [ ] (http://img.youtube.com/vi/CophjRFXGWI/0.jpg)] (http://www.youtube.com/watch?v=CophjRFXGWI "Equalizador de Histograma")
  
  
  
