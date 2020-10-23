@@ -328,7 +328,7 @@ _labeling.cpp_
 ![Entrada do Programa](https://i.imgur.com/NS7jxHF.png)
 
 
-Passos:
+Etapas:
 
  **1.Remoção das bolhas das bordas**
 
@@ -348,15 +348,15 @@ Passos:
 
 ![1.4](https://i.imgur.com/SB7guki.png)
 
- **2.Trocar a cor de fundo**
+ **2.Troca da cor de fundo**
  
  ![2](https://i.imgur.com/WNhnWef.png)
  
- **3.Identificar as bolhas com buracos**
+ **3.Identifica as bolhas com buracos**
  
  ![3](https://i.imgur.com/p1oZw3z.png)
 
- **4.Trocar a cor de fundo**
+ **4.Troca da cor de fundo**
  
  ![4](https://i.imgur.com/ctR2Qsk.png)
  
