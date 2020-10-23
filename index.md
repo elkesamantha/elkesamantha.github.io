@@ -426,11 +426,11 @@ int main(int argc, char** argv){
  
  ![](https://i.imgur.com/W8wf2tA.jpg)
  
- **Vídeo mostrando a aplicação do programa:**
+ **Link para Vídeo mostrando a aplicação do programa:**
  
-[Equalização de Histograma](http://www.youtube.com/watch?v=CophjRFXGWI)
+[Equalização de Histograma - YouTube](http://www.youtube.com/watch?v=CophjRFXGWI)
  
- [! [Equalização] (http://img.youtube.com/vi/CophjRFXGWI/0.jpg)] (http://www.youtube.com/watch?v=CophjRFXGWI "Equalização de Histograma")
+ 
  
  
 
