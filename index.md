@@ -426,9 +426,9 @@ int main(int argc, char** argv){
  
  ![](https://i.imgur.com/W8wf2tA.jpg)
  
- **Vídeo mostrando a aplicação do programa**
+ **Vídeo mostrando a aplicação do programa:**
  
-https://youtu.be/CophjRFXGWI
+[ ](https://youtu.be/CophjRFXGWI "Equalizador de Histograma")
  
  
  
