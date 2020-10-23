@@ -430,6 +430,7 @@ int main(int argc, char** argv){
  
 [Equalização de Histograma](http://www.youtube.com/watch?v=CophjRFXGWI)
  
+ [! [Equalização] (http://img.youtube.com/vi/CophjRFXGWI/0.jpg)] (http://www.youtube.com/watch?v=CophjRFXGWI "Equalização de Histograma")
  
  
 
