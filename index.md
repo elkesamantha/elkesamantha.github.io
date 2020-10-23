@@ -371,7 +371,7 @@ Etapas:
 
 ## **4.Equalizador de Histograma**
 
-**Esse programa, para cada imagem capturada, realiza a equalização do histogram antes de exibir a imagem.Sua implementação aponta a câmera para ambientes com iluminações variadas e observando o efeito gerado.As imagens processadas serão em tons de cinza. **
+**Esse programa, para cada imagem capturada, realiza a equalização do histogram antes de exibir a imagem. Sua implementação aponta a câmera para ambientes com iluminações variadas e observando o efeito gerado. As imagens processadas serão em tons de cinza.**
 
 ### Código
 
