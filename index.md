@@ -428,7 +428,7 @@ int main(int argc, char** argv){
  
  **Vídeo mostrando a aplicação do programa**
  
- ![](https://youtu.be/CophjRFXGWI)
+https://youtu.be/CophjRFXGWI
  
  
  
