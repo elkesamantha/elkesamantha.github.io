@@ -4,9 +4,6 @@
 
 **Esse programa solicita ao usuário as coordenadas de dois pontos P1 e P2 localizados dentro dos limites do tamanho de uma imagem e exibe que lhe for fornecida. A região definida pelo retângulo de vértices opostos definidos pelos pontos P1 e P2 será exibida com o negativo da imagem na região correspondente.**
 
-**Imagem original - Entrada do programa:**
-
-![Imagem Original](https://i.imgur.com/nN2xezH.jpg)
 
 ### Código
 _regions.cpp_
@@ -84,9 +81,10 @@ Calcula-se o negativo dos pixels da região delimitada pelos pontos fornecidos s
 ````
 Por fim, é exibida o negativo da imagem no trecho solicitado.
 
-**Exemplo de utilização do programa**
 
-![Imagem  Negativo](https://i.imgur.com/gAZrRad.jpg)
+**Imagem original - Entrada do programa:**
+
+![Imagem Original](https://i.imgur.com/nN2xezH.jpg)
 
 
 **Saída do programa _regions.cpp_**
@@ -151,9 +149,6 @@ De acordo com os seguintes passos:
 
 Copia segundo quadrante para imagem auxiliar; Copia quarto quadrante para o segundo quadrante; Copia imagem auxiliar para o quarto quadrante; Copia primeiro quadrante para a imagem auxiliar; Copia terceiro quadrante para o primeiro quadrante; Copia imagem auxiliar para o terceiro quadrante.
 
-**Utilização do programa**
-
-![](https://i.imgur.com/UkMsWAr.jpg)
 
 **Entrada do programa _trocaregioes.cpp_**
 
