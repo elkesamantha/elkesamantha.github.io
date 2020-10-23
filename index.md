@@ -79,8 +79,6 @@ Calcula-se o negativo dos pixels da região delimitada pelos pontos fornecidos s
  }
  
 ````
-Por fim, é exibida o negativo da imagem no trecho solicitado.
-
 
 **Imagem original - Entrada do programa:**
 
