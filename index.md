@@ -422,10 +422,7 @@ int main(int argc, char** argv){
 }
 
 ````
- **Utilização do programa**
- 
- ![](https://i.imgur.com/W8wf2tA.jpg)
- 
+
  **Link para Vídeo mostrando a aplicação do programa:**
  
 [Equalização de Histograma - YouTube](http://www.youtube.com/watch?v=CophjRFXGWI)
@@ -434,12 +431,76 @@ int main(int argc, char** argv){
  
 ## **4.Detector de Movimento**
 
-**Este programa continuamente calcula o histograma de ceuma componente de cor é suficiente) e compará-lo com o último histograma calculado. Quando a diferença entre estes ultrapassar um limiar pré-estabelecido, ative um alarme. Utilize uma função de comparação que julgar conveniente. **
+**Este programa continuamente calcula o histograma da imagem  e o compara com o último histograma calculado. Quando a diferença entre estes ultrapassa um limiar pré-estabelecido, ativa um alarme.**
 
 ### Código
 
-_equalize.cpp_
+_motiondetector.cpp_
+
+````
+#include <iostream>
+#include <opencv2/opencv.hpp>
+#include <unistd.h>
+
+using namespace cv;
+using namespace std;
+
+int main(int argc, char** argv){
+
+  Mat image1, image2, sinal_alarme;
+  Mat histograma1, histograma2;
+  int nbins = 64;
+  float range[] = {0, 256};
+  const float *histrange = { range };
+  VideoCapture cap;
+  bool uniform = true;
+  bool acummulate = false;
+  float correlation;
+
+  sinal_alarme = imread("alerta.jpg",CV_LOAD_IMAGE_GRAYSCALE);
+
+  cap.open(0);
+
+  if(!cap.isOpened()){
+    cout << "falha camera";
+    return -1;
+  }
+
+  while(1){
+    cap >> image1;
+    cvtColor(image1,image1, CV_BGR2GRAY);
+    calcHist(&image1, 1, 0, Mat(), histograma1, 1, &nbins,
+             &histrange, uniform, acummulate);
+
+    usleep(10000);
+
+    cap >> image2;
+    cvtColor(image2,image2, CV_BGR2GRAY);
+    calcHist(&image2, 1, 0, Mat(), histograma2, 1, &nbins,
+             &histrange, uniform, acummulate);
+
+    correlation = compareHist(histograma1, histograma2,
+                              CV_COMP_CORREL);
+
+    if (correlation < 0.95){
+      cout << "***Movimento Detectado***" << endl;
+    }
+
+
+    imshow("image", image1);
+
+    char encerrar = (char)waitKey(33);
+    if( encerrar == 32 ) break; //space
+  }
+
+  return 0;
+}
+
+````
  
+ **Link para Vídeo mostrando a aplicação do programa:**
+ 
+[Detector de Movimento - YouTube](https://www.youtube.com/watch?v=f6WjwWiZSYk)
  
 
 
