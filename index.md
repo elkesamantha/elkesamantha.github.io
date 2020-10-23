@@ -430,7 +430,15 @@ int main(int argc, char** argv){
  
 [Equalização de Histograma - YouTube](http://www.youtube.com/watch?v=CophjRFXGWI)
  
+
  
+## **4.Detector de Movimento**
+
+**Este programa continuamente calcula o histograma de ceuma componente de cor é suficiente) e compará-lo com o último histograma calculado. Quando a diferença entre estes ultrapassar um limiar pré-estabelecido, ative um alarme. Utilize uma função de comparação que julgar conveniente. **
+
+### Código
+
+_equalize.cpp_
  
  
 
