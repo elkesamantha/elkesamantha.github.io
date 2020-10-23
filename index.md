@@ -369,5 +369,65 @@ Etapas:
 ![](https://i.imgur.com/k6P6X3K.jpg)
 
 
+## **4.Equalizador de Histograma**
+
+**Esse programa, para cada imagem capturada, realiza a equalização do histogram antes de exibir a imagem.Sua implementação aponta a câmera para ambientes com iluminações variadas e observando o efeito gerado.As imagens processadas serão em tons de cinza. **
+
+### Código
+
+_equalize.cpp_
+
+````
+#include <iostream>
+#include <opencv2/opencv.hpp>
+#include <unistd.h>
+
+
+using namespace cv;
+using namespace std;
+
+int main(int argc, char** argv){
+  VideoCapture cap;
+  Mat frame_in, frame_out;
+
+  cap.open(0);
+
+  if(!cap.isOpened()){
+    cout << "camera indisponivel";
+    return -1;
+  }
+
+  int frame_width = cap.get(CV_CAP_PROP_FRAME_WIDTH);
+  int frame_height = cap.get(CV_CAP_PROP_FRAME_HEIGHT);
+
+  while(1){
+
+    cap >> frame_in;
+    cvtColor(frame_in,frame_in, CV_BGR2GRAY);
+  
+    equalizeHist(frame_in,frame_out);
+
+    namedWindow("Original", CV_WINDOW_AUTOSIZE );
+    namedWindow("Equalizado", CV_WINDOW_AUTOSIZE );
+
+    imshow("Original", frame_in );
+    imshow("Equalizado", frame_out );
+
+    char c = (char)waitKey(33);
+    if( c == 27 ) break;
+    
+  }
+
+  return 0;
+}
+
+````
+ **Utilização do programa**
+ 
+ ![](https://i.imgur.com/W8wf2tA.jpg)
+ 
+ **Vídeo mostrando a aplicação do programa**
+ 
+ ![](https://i.imgur.com/bIBPXr4.mp4)
 
 
