@@ -360,7 +360,7 @@ Etapas:
  
  ![4](https://i.imgur.com/ctR2Qsk.png)
  
-  **5.Labeling - saída do programa*
+  **5.Labeling - saída do programa**
  
  ![5](https://i.imgur.com/4cc9Vl3.png)
  
