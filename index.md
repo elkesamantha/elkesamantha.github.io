@@ -422,7 +422,7 @@ int main(int argc, char** argv){
  
 
  
-## **4.Detector de Movimento**
+## **5.Detector de Movimento**
 
 **Este programa continuamente calcula o histograma da imagem  e o compara com o último histograma calculado. Quando a diferença entre estes ultrapassa um limiar pré-estabelecido, ativa um alarme.**
 
