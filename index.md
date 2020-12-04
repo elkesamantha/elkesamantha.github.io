@@ -860,4 +860,7 @@ int main(int argc, char** argv){
 
 ````
 
+**Entrada do programa _cannypoints.cpp_**
+
+![](https://imgur.com/NfJbA63)
 
