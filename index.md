@@ -869,5 +869,6 @@ int main(int argc, char** argv){
 ![](https://i.imgur.com/FM7L7fU.jpg)
 
 **Saída do programa _cannypoints.cpp_**
+
 ![](https://i.imgur.com/4H35cmA.jpg)
 
