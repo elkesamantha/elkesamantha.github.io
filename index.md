@@ -942,5 +942,5 @@ int main( int argc, char** argv ){
 }
 
 ````
-![](https://i.imgur.com/xltqPbA.mp4)
+![](https://imgur.com/xltqPbA)
 
