@@ -862,5 +862,5 @@ int main(int argc, char** argv){
 
 **Entrada do programa _cannypoints.cpp_**
 
-![](https://imgur.com/NfJbA63)
+![](https://i.imgur.com/NfJbA63.jpg)
 
