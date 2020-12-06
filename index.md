@@ -943,23 +943,42 @@ int main( int argc, char** argv ){
 
 ````
 Rodada 1
+
 ![1](https://i.imgur.com/ubmY6oW.jpg)
+
 Rodada 2
+
 ![2](https://i.imgur.com/xID3uFX.jpg)
+
 Rodada 3
+
 ![3](https://i.imgur.com/MfdJQKB.jpg)
+
 Rodada 4
+
 ![4](https://i.imgur.com/4ldBd2S.jpg)
+
 Rodada 5
+
 ![5](https://i.imgur.com/65TIY3B.jpg)
+
 Rodada 6
+
 ![6](https://i.imgur.com/Sn4a6m9.jpg)
+
 Rodada 7
+
 ![7](https://i.imgur.com/ll7z4Xv.jpg)
+
 Rodada 8
+
 ![8](https://i.imgur.com/nKODAXA.jpg)
+
 Rodada 9
+
 ![9](https://i.imgur.com/EJ7gviL.jpg)
+
 Rodada 10
+
 ![10](https://i.imgur.com/rShsBRv.jpg)
 
