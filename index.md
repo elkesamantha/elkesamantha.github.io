@@ -731,7 +731,7 @@ Implementação de um programa cannypoints.cpp. A ideia é usar as bordas produz
 
 1.Desenha pontos grandes na imagem pontilhista básica;
 
-2.Usar a posição dos pixels de borda encontrados pelo algoritmo de Canny para desenhar pontos nos respectivos locais na imagem gerada e nas outras partes da imagem (sem bordas);
+2.Usa a posição dos pixels de borda encontrados pelo algoritmo de Canny para desenhar pontos nos respectivos locais na imagem gerada e nas outras partes da imagem (sem bordas);
 
 3.Aumenta-se os limiares do algoritmo de Canny e, para cada novo par de limiares, desenhar círculos cada vez menores nas posições encontradas.
 
