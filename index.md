@@ -735,6 +735,7 @@ Implementação de um programa cannypoints.cpp. A ideia é usar as bordas produz
 
 3.Aumenta-se os limiares do algoritmo de Canny e, para cada novo par de limiares, desenhar círculos cada vez menores nas posições encontradas.
 
+### Código
 
 _cannypoints.cpp_
 
@@ -875,6 +876,8 @@ int main(int argc, char** argv){
 ## **9.K-means**
 
 Programa onde a execução do códig usa o parâmetro nRodadas=1 e inciar os centros de forma aleatória usando o parâmetro KMEANS_RANDOM_CENTERS. Realiza 10 rodadas diferentes do algoritmo.
+
+### Código
 
 _kmeans.cpp_
 
